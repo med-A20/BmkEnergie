@@ -171,5 +171,6 @@ export async function getStaticProps() {
       contact: contact.result,
       social: social.result,
     },
+    revalidate: 10,
   };
 }
