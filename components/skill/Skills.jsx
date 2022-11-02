@@ -17,8 +17,8 @@ const Skills = ({ skill, experience }) => {
         {/* tools */}
         <section className="w-full md:w-1/2 my-5 flex flex-row flex-wrap justify-center items-center content-center">
           {skill?.map((sk, key) => {
-            const src = urlFor(sk.image).url();
-            return <SkillItem key={key} image={src || "/assets/bmk_energie-logo.svg"} title={sk.name || ""} />;
+            const src = sk.image ? urlFor(sk.image).url() :"/assets/skills-svgrepo-com.svg";
+            return <SkillItem key={key} image={src} title={sk.name || ""} />;
           })}
         </section>
         {/* experinces */}

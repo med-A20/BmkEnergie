@@ -8,7 +8,7 @@ const TestamonialItem = ({testamonial}) => {
     <div className="mx-auto">
       {testamonial.length > 0 && <Carousel cols={1} rows={1} gap={3} loop >
         {testamonial?.map((testa, key) => {
-          const src = urlFor(testa.image).url();
+          const src = testa.image ? urlFor(testa.image).url() :'/assets/avatar-user-svgrepo-com.svg';
           return (
             <Carousel.Item
               key={key}
