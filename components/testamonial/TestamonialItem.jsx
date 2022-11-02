@@ -30,7 +30,7 @@ const TestamonialItem = ({testamonial}) => {
                 <div className="flex flex-col justify-between items-center md:items-start ">
                   {/* testamonial */}
                   <div className="order-2 md:order-1 pt-4">
-                    <p className="text-xl font-light capitalize text-center md:text-start">
+                    <p className="text-xl font-light capitalize text-center md:text-start overflow-hidden">
                       {testa.testamonial}
                     </p>
                   </div>
