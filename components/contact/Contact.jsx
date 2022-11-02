@@ -126,7 +126,7 @@ const Contact = ({ contact }) => {
             }}
             name="email"
             type="email"
-            placeholder="Your email"
+            placeholder="Your Email"
             required
             className="bg-slate-200 my-3 rounded-md w-full p-2 outline-none italic pl-3"
           />
@@ -137,7 +137,7 @@ const Contact = ({ contact }) => {
               setMessage(e.target.value);
             }}
             name="message"
-            placeholder="your message"
+            placeholder="Your Message"
             className="bg-slate-200 my-3 rounded-md w-full p-2 outline-none h-[150px] italic pl-3"
           ></textarea>
           {/* submit */}
