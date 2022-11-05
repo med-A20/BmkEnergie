@@ -1,7 +1,6 @@
 import React from "react";
 
 const Hero = ({ id, home }) => {
-  const func = ()=>{}
   return (
     <div
       className="min-h-screen max-w-[1400px] m-auto flex flex-row justify-center items-center relative"
@@ -17,7 +16,7 @@ const Hero = ({ id, home }) => {
             {home[0].description}
           </p>
           <div className="w-full flex flex-row justify-center md:justify-start">
-            <a href={"javascript:func(0)"} onClick={()=>{
+            <a href={""} onClick={()=>{
               window.location.href = `${home[0].cv}?dl=`;
             }}>
               <button className="bg-yellow2 p-3 rounded-md mt-4 font-bold text-xl outline-none active:bg-yellow1">

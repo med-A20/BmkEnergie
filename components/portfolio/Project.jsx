@@ -3,7 +3,8 @@ import React from 'react'
 
 const Project = ({category, name, info, src}) => {
   return (
-    <div className='max-w-[300px] min-h-[400px]  flex flex-col justify-start items-center rounded-md m-3 shadow-xl pb-2 '>
+    <div 
+    className='max-w-[300px] min-h-[400px]  flex flex-col justify-start items-center rounded-md m-3 shadow-xl pb-2 '>
         {/* image */}
         <div className='rounded-xl relative h-2/3 overflow-hidden pt-2'>
             <Image
